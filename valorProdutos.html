@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Calculadora de Vendas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <style>
+        /* Estilos CSS opcionais para melhorar a aparência */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #4616ad;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <img src="img/carrinho.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <h1>Calculadora de Vendas</h1>
+
+                        <table class="table table-bordered border-primary">
+                            <tr>
+                                <th>Nome do Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th></th>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="produto1"></td>
+                                <td><input type="number" id="valor1"></td>
+                                <td><input type="number" id="quantidade1"></td>
+                                <td>
+                                    <div id="totalIndividual1">0.00</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="produto2"></td>
+                                <td><input type="number" id="valor2"></td>
+                                <td><input type="number" id="quantidade2"></td>
+                                <td>
+                                    <div id="totalIndividual2">0.00</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="produto3"></td>
+                                <td><input type="number" id="valor3"></td>
+                                <td><input type="number" id="quantidade3"></td>
+                                <td>
+                                    <div id="totalIndividual3">0.00</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button type="button" class="btn btn-outline-primary"
+                                        onclick="calcularTotal()">Calcular Total</button></td>
+
+                                <td>
+                                    <div id="totalVenda"></div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+
+                    <script src="valorProdutos.js"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
